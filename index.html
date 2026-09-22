@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PASO – Tienda de zapatos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="sneaker" viewBox="0 0 300 180">
+<ellipse cx="152" cy="152" rx="132" ry="7" fill="#000" opacity=".16"/>
+<path d="M22 112C19 90 22 66 30 54C35 47 45 46 55 50C67 56 79 67 93 65L121 53C150 45 179 61 201 77C233 85 269 93 285 105C293 111 292 113 291 115L22 114Z" fill="var(--body)"/>
+<path d="M85 67C82 48 91 33 105 32C113 32 119 41 117 53L101 67Z" fill="var(--accent2)"/>
+<path d="M46 104C90 101 132 80 178 93C142 110 92 114 46 110Z" fill="var(--accent)"/>
+<path d="M20 70H31V106H21Z" fill="var(--accent)"/>
+<path d="M126 54l9 15M143 57l9 15M160 61l9 15M177 67l9 14M193 74l8 13" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<path d="M252 96C270 100 285 106 291 113L250 113Z" fill="#fff" opacity=".4"/>
+<path d="M14 113H292C293 128 285 142 268 142H40C22 142 14 130 14 113Z" fill="var(--sole)"/>
+<path d="M16 127H291" stroke="#000" stroke-opacity=".18" stroke-width="3"/>
+</symbol>
+<symbol id="boot" viewBox="0 0 300 180">
+<ellipse cx="172" cy="177" rx="126" ry="3.5" fill="#000" opacity=".16"/>
+<path d="M62 14H142L150 92C182 96 232 100 266 122C286 132 291 146 289 152H58Z" fill="var(--body)"/>
+<path d="M62 14H142L143 32H63Z" fill="var(--accent)"/>
+<path d="M63 60H146L147 76H64Z" fill="var(--accent)"/>
+<rect x="108" y="57" width="18" height="22" rx="4" fill="var(--accent2)"/>
+<path d="M228 112C258 118 284 132 289 152H236Z" fill="#000" opacity=".16"/>
+<path d="M54 148H291V160Q291 168 280 168H104V176H54Z" fill="var(--sole)"/>
+</symbol>
+<symbol id="loafer" viewBox="0 0 300 180">
+<g transform="translate(0,-18)">
+<ellipse cx="152" cy="150" rx="132" ry="6" fill="#000" opacity=".16"/>
+<path d="M22 112C20 88 38 74 66 76C96 78 118 70 150 76C200 80 250 92 280 108C292 116 291 124 282 128H30C23 128 21 122 22 112Z" fill="var(--body)"/>
+<path d="M112 80C138 86 168 84 194 90L190 108C166 102 138 104 108 96Z" fill="var(--accent)"/>
+<path d="M138 90H160V99H138Z" fill="var(--body)"/>
+<path d="M20 126H290C291 138 284 146 270 146H36C24 146 19 138 20 126Z" fill="var(--sole)"/>
+<path d="M22 135H289" stroke="#000" stroke-opacity=".2" stroke-width="3"/>
+</g>
+</symbol>
+</defs></svg>
+
+<header class="top pad"><span class="logo">PASO</span><button class="cbtn" id="cartBtn" aria-label="Abrir carrito">Carrito <i id="cnt">0</i></button></header>
+
+<main class="pad">
+  <section class="hero">
+    <div><h1>Camina distinto.</h1><p>Envío gratis en compras desde $ 250.000</p><a href="#tienda">Ver zapatos</a></div>
+    <div id="heroImg"></div>
+  </section>
+  <div class="chips" id="chips" role="group" aria-label="Filtrar por tipo"></div>
+  <section class="grid" id="tienda"></section>
+</main>
+<footer class="pad">PASO · Tienda de demostración</footer>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer" aria-label="Carrito de compras" aria-hidden="true">
+  <div class="dh"><h2>Tu carrito</h2><button id="closeBtn" aria-label="Cerrar carrito">×</button></div>
+  <div id="dbody"></div>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>
